@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+:root {
+    --my_grey: #E5E3C9;
+    --color-one: #B4CFB0;
+    --color-two: #94B49F;
+    --color-three: #789395;
+ }
+
+.body{    
+    background-color: var(--color-one);
+    font-family: 'Montserrat', sans-serif;
+    }
+
+#main {
+    background-color: var(--my_grey);
+    margin: 35px 5px;
+    border-radius: 5px;
+    padding: 0px 20px ;
+
+}
+#title{
+    text-align: center;
+    color: var(--color-three);
+    padding-top: 50px;
+    font-weight: 1000;
+}
+.h-4{
+    text-align: center;
+    color: var(--color-three);
+    font-weight: 500;
+}
+
+#img-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0, 20px;
+    padding: 10px 100px;
+    background-color: white;
+
+
+}
+#img{
+   justify-content: center;
+   max-width: 100%;
+   height: auto;
+
+}
+#img-caption{
+    font-size: small;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 10px;
+}
+
+.item{
+    padding: 10px;
+    margin: 20px;
+    background-color: var(--color-two);
+    border-radius: 5px;
+    width: 200px;
+
+}
+
+.h-3 {
+    font-size: medium;
+    text-align: center;
+    color: var(--my_grey);
+}
+.h-2{
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: medium;
+    color: var(--color-three);
+}
+.unordered {
+list-style-type: none;
+padding: 0px;
+margin: 0px;
+}
+
+.list, .para{
+    font-size: small;
+    list-style: none;
+    padding: 5px;
+    color: var(--my_grey);
+   }
+.small {
+       text-align: center;
+       color: var(--my_grey);
+
+   }
+   a:link {
+       text-decoration: none;
+       color: var(--color-three);
+   }
+   a:visited{
+    color: var(--color-two);
+   }
+   a:hover {
+    color: var(--color-one);
+   }
+  
+   @media screen and (max-width: 622px) {
+    .item{
+        padding: 10px;
+        margin: 20px;
+        background-color: var(--color-one);
+        border-radius: 10px;
+        width: 80vw;
+    }
+    .list, .para{
+        font-size: medium;
+        list-style: none;
+        padding: 5px;
+        text-align: center;
+       }
+       
+       .h-3 {
+        font-size: large;
+        font-weight: bold;
+        text-align: center;
+       }
+
+  }
